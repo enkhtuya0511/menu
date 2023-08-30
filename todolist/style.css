@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 20px;
+}
+
+.con1{
+    display: flex;
+    gap: 10px;
+}
+
+#screen{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text{
+    height: 30px;
+    width: 150px;
+    border: 1px solid green;
+    text-align: center;
+}
+
+

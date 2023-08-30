@@ -1,0 +1,59 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: beige;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.title {
+  font-size: 50px;
+
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  height: 29px;
+
+  width: 80px;
+
+  border: 1px solid rgb(108, 108, 86);
+  border-radius: 5px;
+
+  color: Org(131, 131, 89);
+}
+
+.menu {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pancake {
+  display: flex;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.pancake-img {
+  height: 150px;
+
+  width: 220px;
+
+  border: 1px solid rgb(108, 108, 86);
+  border-radius: 5px;
+}
+
+.desc {
+  padding: 10px 20px;
+}
