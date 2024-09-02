@@ -91,12 +91,15 @@ let category = "all";
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", () => {
     category = buttons[i].id;
-    console.log(category)
+
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    buttons[i].classList.add("active");
+
     menu.innerHTML = "";
     for (let j = 0; j < menuArr.length; j++) {
-      if(menuArr[j].category==category){
+      if (menuArr[j].category === category) {
         menu.innerHTML += htmlElement(menuArr[j]);
-      } else {
+      } else if ("all" === category) {
         menu.innerHTML += htmlElement(menuArr[j]);
       }
     }
@@ -132,7 +135,7 @@ for (let i = 0; i < newMenu.length; i++) {
     </div>
     <p class="desc">
     ${menuArr[i].desc}
-    </p> 
+    </p>
     </div>
     </div>`;
 }
